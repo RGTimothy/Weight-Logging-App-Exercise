@@ -1,0 +1,2968 @@
+2017-12-06 04:40:08 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(429): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(100): yii\db\Command->queryColumn()
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(216): yii\db\mysql\Schema->findTableNames('')
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject(Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/var/www/html/w...', Array)
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#23 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#24 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(429): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(100): yii\db\Command->queryColumn()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(216): yii\db\mysql\Schema->findTableNames('')
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject(Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/var/www/html/w...', Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-12-06 04:40:06 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=gii'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '50502'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512535206.113
+    'REQUEST_TIME' => 1512535206
+]
+2017-12-06 04:41:07 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'weightlogging_db' in /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(429): yii\db\Command->queryInternal('fetchAll', 7)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(100): yii\db\Command->queryColumn()
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(216): yii\db\mysql\Schema->findTableNames('')
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject(Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/var/www/html/w...', Array)
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#23 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#24 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(yii\gii\controllers\DefaultController))
+#25 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#29 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'weightlogging_db' in /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(429): yii\db\Command->queryInternal('fetchAll', 7)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(100): yii\db\Command->queryColumn()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(216): yii\db\mysql\Schema->findTableNames('')
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/components/ActiveField.php(41): call_user_func(Object(Closure))
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/ActiveForm.php(312): yii\BaseYii::createObject(Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/generators/model/form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/views/default/view.php(37): yii\base\View->renderFile('/var/www/html/w...', Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', '[<span class="s...')
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(yii\gii\controllers\DefaultController))
+#23 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 /var/www/html/weightlogging/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(61): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-12-06 04:41:07 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=gii'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '50522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512535267.455
+    'REQUEST_TIME' => 1512535267
+]
+2017-12-06 05:32:03 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: daily-weight/show in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-06 05:32:03 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '50994'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512538323.676
+    'REQUEST_TIME' => 1512538323
+]
+2017-12-06 05:42:33 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][Error] Error: Class 'yii\jui\DatePicker' not found in /var/www/html/weightlogging/views/daily-weight/_form.php:17
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, NULL)
+#3 /var/www/html/weightlogging/views/daily-weight/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\DailyWeightController))
+#8 /var/www/html/weightlogging/controllers/DailyWeightController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\DailyWeightController->actionCreate()
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/cr...', Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-12-06 05:42:33 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51164'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fcreate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512538953.65
+    'REQUEST_TIME' => 1512538953
+]
+2017-12-06 05:43:08 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][Error] Error: Class 'yii\jui\DatePicker' not found in /var/www/html/weightlogging/views/daily-weight/_form.php:18
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, NULL)
+#3 /var/www/html/weightlogging/views/daily-weight/create.php(18): yii\base\View->render('_form', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\DailyWeightController))
+#8 /var/www/html/weightlogging/controllers/DailyWeightController.php(79): yii\base\Controller->render('create', Array)
+#9 [internal function]: app\controllers\DailyWeightController->actionCreate()
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/cr...', Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-12-06 05:43:08 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51172'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fcreate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512538988.973
+    'REQUEST_TIME' => 1512538988
+]
+2017-12-06 05:44:21 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/weightlogging/controllers/DailyWeightController.php:62
+Stack trace:
+#0 /var/www/html/weightlogging/controllers/DailyWeightController.php(62): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 62, Array)
+#1 [internal function]: app\controllers\DailyWeightController->actionShow()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-12-06 05:44:21 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51228'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539061.003
+    'REQUEST_TIME' => 1512539061
+]
+2017-12-06 05:44:26 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: dataProvider in /var/www/html/weightlogging/controllers/DailyWeightController.php:62
+Stack trace:
+#0 /var/www/html/weightlogging/controllers/DailyWeightController.php(62): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 62, Array)
+#1 [internal function]: app\controllers\DailyWeightController->actionShow()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-12-06 05:44:26 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539066.464
+    'REQUEST_TIME' => 1512539066
+]
+2017-12-06 05:44:48 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: searchModel in /var/www/html/weightlogging/controllers/DailyWeightController.php:61
+Stack trace:
+#0 /var/www/html/weightlogging/controllers/DailyWeightController.php(61): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 61, Array)
+#1 [internal function]: app\controllers\DailyWeightController->actionShow()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-12-06 05:44:48 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539088.233
+    'REQUEST_TIME' => 1512539088
+]
+2017-12-06 05:45:10 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: searchModel in /var/www/html/weightlogging/views/daily-weight/show.php:23
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/show.php(23): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 23, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(64): yii\base\Controller->render('show', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionShow()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 05:45:10 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51260'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539110.668
+    'REQUEST_TIME' => 1512539110
+]
+2017-12-06 05:45:33 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/up...', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 05:45:33 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/update'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51268'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fupdate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fupdate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539133.36
+    'REQUEST_TIME' => 1512539133
+]
+2017-12-06 05:45:53 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/up...', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 05:45:53 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/update'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51284'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fupdate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fupdate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539153.458
+    'REQUEST_TIME' => 1512539153
+]
+2017-12-06 05:48:42 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveForm::layout in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Component.php:203
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(532): yii\base\Component->__set('layout', 'horizontal')
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(106): yii\BaseYii::configure(Object(yii\widgets\ActiveForm), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Act...', Array, Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Act...', Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Widget.php(89): yii\BaseYii::createObject(Array)
+#7 /var/www/html/weightlogging/views/daily-weight/_form.php(14): yii\base\Widget::begin(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, NULL)
+#11 /var/www/html/weightlogging/views/daily-weight/create.php(18): yii\base\View->render('_form', Array)
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('create', Array, Object(app\controllers\DailyWeightController))
+#16 /var/www/html/weightlogging/controllers/DailyWeightController.php(82): yii\base\Controller->render('create', Array)
+#17 [internal function]: app\controllers\DailyWeightController->actionCreate()
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/cr...', Array)
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2017-12-06 05:48:42 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fcreate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539322.466
+    'REQUEST_TIME' => 1512539322
+]
+2017-12-06 05:55:57 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(320): yii\db\Command->queryAll()
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(662): yii\db\mysql\Schema->loadTableSchema('daily_weight')
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(173): yii\db\Schema->getTableMetadata('daily_weight', 'schema', false)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/ActiveRecord.php(346): yii\db\Schema->getTableSchema('daily_weight')
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/BaseActiveRecord.php(304): yii\db\BaseActiveRecord->hasAttribute('date')
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Model.php(706): yii\db\BaseActiveRecord->__set('date', '2017-12-21')
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Model.php(835): yii\base\Model->setAttributes(Array)
+#17 /var/www/html/weightlogging/controllers/DailyWeightController.php(78): yii\base\Model->load(Array)
+#18 [internal function]: app\controllers\DailyWeightController->actionCreate()
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/cr...', Array)
+#23 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#25 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(243): yii\db\Connection->getSlavePdo()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(1062): yii\db\Command->prepare(true)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(320): yii\db\Command->queryAll()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/mysql/Schema.php(111): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(662): yii\db\mysql\Schema->loadTableSchema('daily_weight')
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/Schema.php(173): yii\db\Schema->getTableMetadata('daily_weight', 'schema', false)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/ActiveRecord.php(346): yii\db\Schema->getTableSchema('daily_weight')
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/ActiveRecord.php(380): yii\db\ActiveRecord::getTableSchema()
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/BaseActiveRecord.php(474): yii\db\ActiveRecord->attributes()
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/BaseActiveRecord.php(304): yii\db\BaseActiveRecord->hasAttribute('date')
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Model.php(706): yii\db\BaseActiveRecord->__set('date', '2017-12-21')
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Model.php(835): yii\base\Model->setAttributes(Array)
+#15 /var/www/html/weightlogging/controllers/DailyWeightController.php(78): yii\base\Model->load(Array)
+#16 [internal function]: app\controllers\DailyWeightController->actionCreate()
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/cr...', Array)
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2017-12-06 05:55:57 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/create'
+]
+
+$_POST = [
+    '_csrf' => '9dCUXwFi1b8NLy0WAJw5ff8P7LXnXcHfjMS6S-hhj9C5kfArRDud0l1tTHo4020Lr3mf-osp8bqhqcxzhwL6vQ=='
+    'DailyWeight' => [
+        'date' => '2017-12-21'
+        'max' => '50'
+        'min' => '48'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '179'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=daily-weight%2Fcreate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512539757.476
+    'REQUEST_TIME' => 1512539757
+]
+2017-12-06 06:02:29 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/up...', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 06:02:29 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/update'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51708'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fupdate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fupdate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512540149.35
+    'REQUEST_TIME' => 1512540149
+]
+2017-12-06 06:11:46 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: data in /var/www/html/weightlogging/views/daily-weight/index.php:30
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/index.php(30): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 30, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 06:11:46 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512540706.067
+    'REQUEST_TIME' => 1512540706
+]
+2017-12-06 06:17:41 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /var/www/html/weightlogging/views/daily-weight/index.php:33
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/index.php(33): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/var/www/html/w...', 33, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 06:17:39 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '51958'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512541059.137
+    'REQUEST_TIME' => 1512541059
+]
+2017-12-06 06:46:24 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][ParseError] ParseError: syntax error, unexpected '.' in /var/www/html/weightlogging/views/daily-weight/index.php:50
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-12-06 06:46:24 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '52916'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512542784.244
+    'REQUEST_TIME' => 1512542784
+]
+2017-12-06 06:59:05 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:4096] yii\base\ErrorException: Object of class yii\db\ActiveQuery could not be converted to string in /var/www/html/weightlogging/views/daily-weight/show.php:20
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/show.php(20): yii\base\ErrorHandler->handleError(4096, 'Object of class...', '/var/www/html/w...', 20, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionShow()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 06:59:05 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53114'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512543545.279
+    'REQUEST_TIME' => 1512543545
+]
+2017-12-06 07:00:14 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: data in /var/www/html/weightlogging/views/daily-weight/show.php:19
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/show.php(19): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 19, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionShow()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:00:14 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512543614.545
+    'REQUEST_TIME' => 1512543614
+]
+2017-12-06 07:01:31 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/html/weightlogging/views/daily-weight/show.php:19
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/show.php(19): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 19, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionShow()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:01:31 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53140'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512543691.332
+    'REQUEST_TIME' => 1512543691
+]
+2017-12-06 07:06:02 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][Error] Error: Class 'ActiveDataProvider' not found in /var/www/html/weightlogging/views/daily-weight/show.php:23
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#5 [internal function]: app\controllers\DailyWeightController->actionShow()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-12-06 07:06:02 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53292'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512543962.082
+    'REQUEST_TIME' => 1512543962
+]
+2017-12-06 07:06:32 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][Error] Error: Class 'ListView' not found in /var/www/html/weightlogging/views/daily-weight/show.php:29
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#5 [internal function]: app\controllers\DailyWeightController->actionShow()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-12-06 07:06:32 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512543992.482
+    'REQUEST_TIME' => 1512543992
+]
+2017-12-06 07:10:34 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][Error] Error: Class 'DetailView' not found in /var/www/html/weightlogging/views/daily-weight/show.php:34
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#5 [internal function]: app\controllers\DailyWeightController->actionShow()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-12-06 07:10:34 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53432'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544233.999
+    'REQUEST_TIME' => 1512544233
+]
+2017-12-06 07:10:45 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/html/weightlogging/views/daily-weight/show.php:35
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/show.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 35, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionShow()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:10:45 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53438'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544245.718
+    'REQUEST_TIME' => 1512544245
+]
+2017-12-06 07:16:28 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\DetailView::dataProvider in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Component.php:203
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(532): yii\base\Component->__set('dataProvider', Object(yii\data\ActiveDataProvider))
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(106): yii\BaseYii::configure(Object(yii\widgets\DetailView), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/weightlogging/views/daily-weight/show.php(30): yii\base\Widget::widget(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#12 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#13 [internal function]: app\controllers\DailyWeightController->actionShow()
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-06 07:16:28 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53548'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544588.724
+    'REQUEST_TIME' => 1512544588
+]
+2017-12-06 07:17:31 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\data\ActiveDataProvider::date in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Component.php:148
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\base\Component->__get('date')
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/DetailView.php(236): yii\helpers\BaseArrayHelper::getValue(Object(yii\data\ActiveDataProvider), 'date')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/DetailView.php(141): yii\widgets\DetailView->normalizeAttributes()
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\widgets\DetailView->init()
+#4 [internal function]: yii\base\BaseObject->__construct(Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#9 /var/www/html/weightlogging/views/daily-weight/show.php(29): yii\base\Widget::widget(Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#12 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#14 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#15 [internal function]: app\controllers\DailyWeightController->actionShow()
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#22 {main}
+2017-12-06 07:17:31 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53566'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544651.363
+    'REQUEST_TIME' => 1512544651
+]
+2017-12-06 07:20:54 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][Error] Error: Class 'ListView' not found in /var/www/html/weightlogging/views/daily-weight/show.php:22
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require()
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#5 [internal function]: app\controllers\DailyWeightController->actionShow()
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-12-06 07:20:54 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53632'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544854.865
+    'REQUEST_TIME' => 1512544854
+]
+2017-12-06 07:21:13 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use yii\helpers\Html as Html because the name is already in use in /var/www/html/weightlogging/views/daily-weight/_item.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-12-06 07:21:13 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53636'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544873.671
+    'REQUEST_TIME' => 1512544873
+]
+2017-12-06 07:21:27 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\DailyWeight::name in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Component.php:148
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\base\Component->__get('name')
+#1 /var/www/html/weightlogging/views/daily-weight/_item.php(13): yii\db\BaseActiveRecord->__get('name')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, NULL)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/ListView.php(191): yii\base\View->render('_item', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/ListView.php(124): yii\widgets\ListView->renderItem(Object(app\models\DailyWeight), 3, 0)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/BaseListView.php(160): yii\widgets\ListView->renderItems()
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/BaseListView.php(135): yii\widgets\BaseListView->renderSection('{items}')
+#9 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/widgets/BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Widget.php(140): yii\widgets\BaseListView->run()
+#12 /var/www/html/weightlogging/views/daily-weight/show.php(24): yii\base\Widget::widget(Array)
+#13 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#17 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#18 [internal function]: app\controllers\DailyWeightController->actionShow()
+#19 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#21 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#22 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#23 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#25 {main}
+2017-12-06 07:21:27 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53638'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544887.435
+    'REQUEST_TIME' => 1512544887
+]
+2017-12-06 07:22:26 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\DetailView::dataProvider in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Component.php:203
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(532): yii\base\Component->__set('dataProvider', Object(yii\data\ActiveDataProvider))
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(106): yii\BaseYii::configure(Object(yii\widgets\DetailView), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/weightlogging/views/daily-weight/show.php(24): yii\base\Widget::widget(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#12 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#13 [internal function]: app\controllers\DailyWeightController->actionShow()
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-06 07:22:26 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53654'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544946.516
+    'REQUEST_TIME' => 1512544946
+]
+2017-12-06 07:22:56 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\DetailView::dataProvider in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Component.php:203
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(532): yii\base\Component->__set('dataProvider', Object(yii\data\ActiveDataProvider))
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/BaseObject.php(106): yii\BaseYii::configure(Object(yii\widgets\DetailView), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Widget.php(137): yii\BaseYii::createObject(Array)
+#7 /var/www/html/weightlogging/views/daily-weight/show.php(24): yii\base\Widget::widget(Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#12 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#13 [internal function]: app\controllers\DailyWeightController->actionShow()
+#14 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#17 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#18 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2017-12-06 07:22:56 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53672'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512544976.164
+    'REQUEST_TIME' => 1512544976
+]
+2017-12-06 07:26:16 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/view', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 07:26:16 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'test/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53754'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test%2Fview'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=test%2Fview'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545176.626
+    'REQUEST_TIME' => 1512545176
+]
+2017-12-06 07:26:51 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/view', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 07:26:51 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'test/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53764'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test%2Fview'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=test%2Fview'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545211.709
+    'REQUEST_TIME' => 1512545211
+]
+2017-12-06 07:26:58 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: The requested page does not exist. in /var/www/html/weightlogging/controllers/TestController.php:121
+Stack trace:
+#0 /var/www/html/weightlogging/controllers/TestController.php(55): app\controllers\TestController->findModel('3')
+#1 [internal function]: app\controllers\TestController->actionView('3')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/view', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-12-06 07:26:58 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'test/view'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test%2Fview&id=3'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=test%2Fview&id=3'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545218.933
+    'REQUEST_TIME' => 1512545218
+]
+2017-12-06 07:27:06 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: test/view?id=3 in /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php:128
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view?id=3', Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/view?id=3', Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-12-06 07:27:06 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'test/view?id=3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53778'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test%2Fview?id=3'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=test%2Fview?id=3'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545226.55
+    'REQUEST_TIME' => 1512545226
+]
+2017-12-06 07:27:33 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: The requested page does not exist. in /var/www/html/weightlogging/controllers/TestController.php:121
+Stack trace:
+#0 /var/www/html/weightlogging/controllers/TestController.php(55): app\controllers\TestController->findModel('1')
+#1 [internal function]: app\controllers\TestController->actionView('1')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/view', Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-12-06 07:27:33 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'test/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53792'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=test%2Fview&id=1'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=test%2Fview&id=1'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545253.83
+    'REQUEST_TIME' => 1512545253
+]
+2017-12-06 07:29:54 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/html/weightlogging/views/daily-weight/show.php:22
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/show.php(22): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 22, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('show', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(65): yii\base\Controller->render('show', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionShow()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('show', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/sh...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:29:54 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/show'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fshow'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fshow'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545394.136
+    'REQUEST_TIME' => 1512545394
+]
+2017-12-06 07:33:25 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/up...', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 07:33:25 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/update'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53870'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fupdate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fupdate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545605.089
+    'REQUEST_TIME' => 1512545605
+]
+2017-12-06 07:33:35 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/up...', Array)
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-12-06 07:33:35 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/update'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=daily-weight%2Fcreate'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53866'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Fupdate'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Fupdate'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545615.093
+    'REQUEST_TIME' => 1512545615
+]
+2017-12-06 07:39:40 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][ParseError] ParseError: syntax error, unexpected '.' in /var/www/html/weightlogging/views/daily-weight/index.php:45
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-12-06 07:39:40 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=test%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545980.374
+    'REQUEST_TIME' => 1512545980
+]
+2017-12-06 07:39:46 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/html/weightlogging/views/daily-weight/index.php:45
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/index.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 45, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:39:46 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=test%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512545986.172
+    'REQUEST_TIME' => 1512545986
+]
+2017-12-06 07:40:24 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/html/weightlogging/views/daily-weight/index.php:45
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/index.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 45, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:40:24 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=test%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512546024.626
+    'REQUEST_TIME' => 1512546024
+]
+2017-12-06 07:40:26 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /var/www/html/weightlogging/views/daily-weight/index.php:45
+Stack trace:
+#0 /var/www/html/weightlogging/views/daily-weight/index.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/var/www/html/w...', 45, Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(332): require('/var/www/html/w...')
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#3 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#4 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#5 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#10 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#11 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-12-06 07:40:26 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=test%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '53954'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512546026.239
+    'REQUEST_TIME' => 1512546026
+]
+2017-12-06 07:43:31 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][error][ParseError] ParseError: syntax error, unexpected '.' in /var/www/html/weightlogging/views/daily-weight/index.php:48
+Stack trace:
+#0 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/w...', Array)
+#1 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/w...', Array, Object(app\controllers\DailyWeightController))
+#2 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('index', Array, Object(app\controllers\DailyWeightController))
+#3 /var/www/html/weightlogging/controllers/DailyWeightController.php(43): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\controllers\DailyWeightController->actionIndex()
+#5 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#8 /var/www/html/weightlogging/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('daily-weight/in...', Array)
+#9 /var/www/html/weightlogging/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /var/www/html/weightlogging/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-12-06 07:43:31 [127.0.0.1][-][7l610nupd95lpru7ch35m9v2b2][info][application] $_GET = [
+    'r' => 'daily-weight/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '7l610nupd95lpru7ch35m9v2b2'
+    '_csrf' => '0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/weightlogging/web/index.php?r=test%2Findex'
+    'HTTP_COOKIE' => 'PHPSESSID=7l610nupd95lpru7ch35m9v2b2; _csrf=0dbd07fbc29a6a0280da81a5f5d8d20722697070e11512705035c85cbfb0cf55a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAdtEYHmPBal8OTvPvsOlt0e-mv8ocum%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/weightlogging/web/index.php'
+    'REMOTE_PORT' => '54050'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=daily-weight%2Findex'
+    'REQUEST_URI' => '/weightlogging/web/index.php?r=daily-weight%2Findex'
+    'SCRIPT_NAME' => '/weightlogging/web/index.php'
+    'PHP_SELF' => '/weightlogging/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512546211.862
+    'REQUEST_TIME' => 1512546211
+]
